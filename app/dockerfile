@@ -4,6 +4,6 @@ WORKDIR /app
 
 COPY . /app
 
-RUN pip install -e ".[app]"
+RUN pip install -e "app/.[app]"
 
 CMD ["python", "src/test.py"]
