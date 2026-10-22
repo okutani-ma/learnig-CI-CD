@@ -4,6 +4,6 @@ WORKDIR /app
 
 COPY . /app
 
-RUN pip install -e . && pip install -e ".[dev]"
+RUN pip install -e .
 
 CMD ["python", "src/test.py"]
