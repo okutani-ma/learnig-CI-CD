@@ -10,9 +10,9 @@ ci = [
     "ruff"
 ]
 
-app = {
+app = [
     "fastapi"
-}
+]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
