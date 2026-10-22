@@ -2,7 +2,7 @@ From python:3.13
 
 WORKDIR /app
 
-COPY .. /app
+COPY learning-CI-CD /app
 
 RUN pip install -e .
 
