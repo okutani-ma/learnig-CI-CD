@@ -1,3 +1,9 @@
+[project]
+name = "my-package"
+version = "0.1.0"
+description = "A small example package"
+requires-python = ">=3.9"
+
 [project.optional-dependencies]
 ci = [
     "pytest",
