@@ -30,7 +30,7 @@ jobs:
                 python -m pip install -e .
 
             - name: Run ruff
-              run: ruff check src/
+              run: python -m ruff check .
             
             - name: Run pytest
-              run: pytest
+              run: python -m pytest

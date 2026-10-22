@@ -1,14 +1,8 @@
-[project]
-name = "my-package"
-version = "0.1.0"
-description = "package used in CI"
-requires-python = ">=3.9"
-dependencies = []
-
 [project.optional-dependencies]
 ci = [
     "pytest",
     "ruff"
 ]
 
-[project.scripts]
+[tool.pytest.ini_options]
+testpaths = ["tests"]
