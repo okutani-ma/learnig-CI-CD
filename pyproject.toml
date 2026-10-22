@@ -3,16 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "CI-package"
+name = "my-package"
 version = "0.1.0"
 description = "package used in CI"
 requires-python = ">=3.9"
-dependencies = []
-
-[project.optional-dependencies]
-ci = [
-    "pytest>=7.0",
-    "ruff>=0.1"
-]
-
-[project.scripts]
