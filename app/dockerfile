@@ -2,8 +2,6 @@ From python:3.13
 
 WORKDIR /app
 
-COPY . /app
-
-RUN ls
+RUN pip install -e .
 
 CMD ["python", "src/test.py"]
