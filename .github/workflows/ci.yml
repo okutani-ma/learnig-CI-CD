@@ -36,7 +36,11 @@ jobs:
               run: python -m pytest
 
             - name: Docker build
-              run: docker build -t test-app .
+              run: |
+                cd app
+                docker build -t test-app .
 
             - name: Docker run
-              run: docker run -p 5000:5000 test-app
+              run: |
+                cd app
+                docker run -p 5000:5000 test-app
