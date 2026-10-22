@@ -1,9 +1,9 @@
 From python:3.13
 
+RUN pip install -e .
+
 WORKDIR /app
 
 COPY . /app
-
-RUN pip install -e /app
 
 CMD ["python", "src/test.py"]
