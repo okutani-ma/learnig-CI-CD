@@ -2,7 +2,7 @@ From python:3.13
 
 WORKDIR /app
 
-COPY app/ /app
+COPY app/ /app/
 
 RUN pip install -e .
 
