@@ -37,6 +37,7 @@ jobs:
 
             - name: Docker build
               run: |
+                cd app
                 docker build -t test-app .
 
             - name: Docker run
