@@ -5,4 +5,3 @@ y = 5
 print("x:", x)
 print("y:", y)
 print("合計:", x + y)
-print("終了")
