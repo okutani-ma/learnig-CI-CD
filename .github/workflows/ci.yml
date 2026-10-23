@@ -37,7 +37,7 @@ jobs:
 
             - name: Docker build
               run: |
-                docker build -t test-app .
+                docker build -f app/dockerfile -t test-app .
 
             - name: Docker run
               run: |
